@@ -31,6 +31,10 @@ steps:
   displayName: 'Install dependencies'
 
 - script: |
+    sudo apt-get install python3-setuptools
+  displayName: 'This is bullshit'
+
+- script: |
     pip install pytest pytest-azurepipelines
     pytest
   displayName: 'pytest'
